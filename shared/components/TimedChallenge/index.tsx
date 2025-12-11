@@ -1,6 +1,12 @@
 'use client';
 
-import { useEffect, useState, useRef, useCallback } from 'react';
+import {
+  useEffect,
+  useLayoutEffect,
+  useState,
+  useRef,
+  useCallback,
+} from 'react';
 import { useChallengeTimer } from '@/shared/hooks/useTimer';
 import { useGoalTimers } from '@/shared/hooks/useGoalTimers';
 import { useSmartReverseMode } from '@/shared/hooks/useSmartReverseMode';
@@ -45,7 +51,8 @@ export default function TimedChallenge<T>({ config }: TimedChallengeProps<T>) {
     stats,
   } = config;
 
-  // Track if we should auto-start (when initialGameMode is provided from store)
+  // Track if user cancelled (to show PreGameScreen after cancel even with initialGameMode)
+  const [wasCancelled, setWasCancelled] = useState(false);
   const hasAutoStarted = useRef(false);
 
   // Smart reverse mode
@@ -196,13 +203,24 @@ export default function TimedChallenge<T>({ config }: TimedChallengeProps<T>) {
   }, [items, gameMode]);
 
   // Auto-start effect when initialGameMode is provided (coming from GameModes modal)
-  useEffect(() => {
+  // Use useLayoutEffect to run synchronously before paint, eliminating flash
+  useLayoutEffect(() => {
     if (initialGameMode && !hasAutoStarted.current && items.length > 0) {
       hasAutoStarted.current = true;
-      // Small delay to ensure component is fully mounted
-      setTimeout(() => handleStart(), 100);
+      // Start game immediately (no setTimeout delay) to prevent flash
+      playClick();
+      stats.reset();
+      setIsFinished(false);
+      setUserAnswer('');
+      setLastAnswerCorrect(null);
+      setWrongSelectedAnswers([]);
+      setCurrentQuestion(generateQuestionRef.current(items));
+      goalTimers.resetGoals();
+      resetTimer();
+      startTimer(); // Start immediately, no delay
     }
-  }, [initialGameMode, items.length, handleStart]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [initialGameMode, items.length]);
 
   const handleCancel = () => {
     playClick();
@@ -211,6 +229,7 @@ export default function TimedChallenge<T>({ config }: TimedChallengeProps<T>) {
     setUserAnswer('');
     setLastAnswerCorrect(null);
     setWrongSelectedAnswers([]);
+    setWasCancelled(true);
   };
 
   const handleSubmit = (e?: React.FormEvent) => {
@@ -286,8 +305,8 @@ export default function TimedChallenge<T>({ config }: TimedChallengeProps<T>) {
     );
   }
 
-  // Skip PreGameScreen when auto-starting (initialGameMode provided from GameModes modal)
-  if (!isRunning && !isFinished && !initialGameMode) {
+  // Skip PreGameScreen when auto-starting (initialGameMode provided and not cancelled)
+  if (!isRunning && !isFinished && !(initialGameMode && !wasCancelled)) {
     return (
       <PreGameScreen
         dojoType={dojoType}
@@ -310,11 +329,6 @@ export default function TimedChallenge<T>({ config }: TimedChallengeProps<T>) {
         onStart={handleStart}
       />
     );
-  }
-
-  // When auto-starting, show nothing briefly while waiting for handleStart to kick in
-  if (!isRunning && !isFinished && initialGameMode) {
-    return null;
   }
 
   if (isFinished) {
