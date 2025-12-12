@@ -8,18 +8,6 @@ import usePreferencesStore from '@/features/Preferences/store/usePreferencesStor
 import { useClick } from '@/shared/hooks/useAudio';
 import { ActionButton } from '@/shared/components/ui/ActionButton';
 
-const FINAL_CHARACTERS = [
-  'h.b.w',
-  'h.d.p',
-  'h.y.py',
-  'k.b.w',
-  'k.d.p',
-  'k.y.py',
-  'k.f.ts',
-  'challenge.similar.haho',
-  'challenge.katakana.kuwaura'
-];
-
 interface SubsetProps {
   sliceRange: number[];
   group: string;
@@ -31,18 +19,17 @@ const Subset = ({ sliceRange, subgroup }: SubsetProps) => {
   const [focusedRow, setFocusedRow] = useState('');
 
   const kanaGroups = kana.slice(sliceRange[0], sliceRange[1]);
-  const kanaGroupIndices = useKanaStore(state => state.kanaGroupIndices);
-  const addKanaGroupIndex = useKanaStore(state => state.addKanaGroupIndex);
-  const addKanaGroupIndices = useKanaStore(state => state.addKanaGroupIndices);
-  const displayKana = usePreferencesStore(state => state.displayKana);
+  const kanaGroupIndices = useKanaStore((state) => state.kanaGroupIndices);
+  const addKanaGroupIndex = useKanaStore((state) => state.addKanaGroupIndex);
+  const addKanaGroupIndices = useKanaStore(
+    (state) => state.addKanaGroupIndices
+  );
+  const displayKana = usePreferencesStore((state) => state.displayKana);
 
   const getGlobalIndex = (localIndex: number) => localIndex + sliceRange[0];
 
   const isChecked = (localIndex: number) =>
     kanaGroupIndices.includes(getGlobalIndex(localIndex));
-
-  const isLastInGroup = (groupName: string) =>
-    FINAL_CHARACTERS.includes(groupName);
 
   const selectAllInSubset = () => {
     playClick();
@@ -67,19 +54,20 @@ const Subset = ({ sliceRange, subgroup }: SubsetProps) => {
         ? 'max-md:opacity-0'
         : 'max-md:opacity-100'
       : isFocused
-      ? 'max-md:opacity-100'
-      : 'max-md:opacity-0';
+        ? 'max-md:opacity-100'
+        : 'max-md:opacity-0';
 
     return `${desktopClass} ${mobileClass}`;
   };
 
   return (
-    <fieldset className=' flex flex-col items-start gap-1'>
+    <fieldset className=" flex flex-col items-start gap-1">
       {kanaGroups.map((group, i) => {
         const isFocused = focusedRow === group.groupName;
+        const isLastInSubset = i === kanaGroups.length - 1;
 
         return (
-          <div key={group.groupName} className='w-full flex flex-col gap-1'>
+          <div key={group.groupName} className="w-full flex flex-col gap-1">
             <label
               className={clsx(
                 'w-full flex flex-row items-center gap-2',
@@ -89,17 +77,17 @@ const Subset = ({ sliceRange, subgroup }: SubsetProps) => {
               onClick={playClick}
             >
               <input
-                type='checkbox'
+                type="checkbox"
                 value={group.groupName}
                 checked={isChecked(i)}
-                onChange={e => {
+                onChange={(e) => {
                   e.currentTarget.blur();
                   addKanaGroupIndex(getGlobalIndex(i));
                 }}
               />
 
               <div
-                className='group relative grid w-full font-normal min-h-auto place-items-start hover:cursor-pointer'
+                className="group relative grid w-full font-normal min-h-auto place-items-start hover:cursor-pointer"
                 onTouchStart={() => setFocusedRow(group.groupName)}
               >
                 {/* Kana characters */}
@@ -127,17 +115,17 @@ const Subset = ({ sliceRange, subgroup }: SubsetProps) => {
             </label>
 
             {/* Divider (except for last character in group) */}
-            {!isLastInGroup(group.groupName) && (
-              <hr className='border-t-1 w-full border-[var(--border-color)]' />
+            {!isLastInSubset && (
+              <hr className="border-t-1 w-full border-[var(--border-color)]" />
             )}
           </div>
         );
       })}
 
       {/* Select All Button */}
-      <div className='flex flex-row gap-2 w-full'>
+      <div className="flex flex-row gap-2 w-full">
         <ActionButton
-          onClick={e => {
+          onClick={(e) => {
             e.currentTarget.blur();
             selectAllInSubset();
           }}
