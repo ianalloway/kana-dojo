@@ -26,3 +26,11 @@ export {
   validateFrontmatter,
   type ValidationResult
 } from './lib/validateFrontmatter';
+export { getBlogPosts, sortPostsByDate } from './lib/getBlogPosts';
+export {
+  getBlogPost,
+  extractHeadings,
+  generateHeadingId,
+  postExists,
+  getPostLocales
+} from './lib/getBlogPost';
