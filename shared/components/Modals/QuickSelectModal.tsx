@@ -192,7 +192,7 @@ const QuickSelectModal = ({
         </div>
 
         {/* Grid of Sets */}
-        <div className='min-h-0 flex-1 overflow-y-auto p-4 sm:p-6'>
+        <div className='min-h-0 flex-1 overflow-x-hidden overflow-y-auto p-4 sm:p-6'>
           {filteredSets.length === 0 ? (
             <div className='flex h-full items-center justify-center'>
               <p className='text-sm text-[var(--secondary-color)]'>
