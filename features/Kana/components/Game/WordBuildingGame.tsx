@@ -77,12 +77,14 @@ const celebrationBounceVariants = {
   idle: {
     y: 0,
     scaleX: 1,
-    scaleY: 1
+    scaleY: 1,
+    opacity: 1
   },
   celebrate: {
     y: [0, -32, -35, 0, -10, 0],
     scaleX: [1, 0.94, 0.96, 1.06, 0.98, 1],
     scaleY: [1, 1.08, 1.04, 0.92, 1.02, 1],
+    opacity: 1,
     transition: {
       duration: 1,
       ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
