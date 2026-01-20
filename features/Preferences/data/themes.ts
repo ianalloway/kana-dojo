@@ -1085,22 +1085,15 @@ const baseThemeSets: BaseThemeGroup[] = [
         id: 'kimono-silk',
         backgroundColor: 'oklch(19.0% 0.048 320.0 / 1)',
         mainColor: 'oklch(72.0% 0.155 330.0 / 1)',
-        secondaryColor: 'oklch(80.0% 0.125 60.0 / 1)'},{
-        id: 'soda-float',
-        backgroundColor: 'oklch(93.0% 0.032 150.0 / 1)',
-        mainColor: 'oklch(62.0% 0.175 155.0 / 1)',
-        secondaryColor: 'oklch(85.0% 0.095 95.0 / 1)'},{
+        secondaryColor: 'oklch(80.0% 0.125 60.0 / 1)',
+      },
+      {
         id: 'umbrella-rain',
         backgroundColor: 'oklch(22.0% 0.018 250.0 / 1)',
         mainColor: 'oklch(70.0% 0.175 225.0 / 1)',
         secondaryColor: 'oklch(75.0% 0.145 350.0 / 1)',
       },
-      {
-        id: 'tanuki-mischief',
-        backgroundColor: 'oklch(22.0% 0.042 55.0 / 1)',
-        mainColor: 'oklch(68.0% 0.125 65.0 / 1)',
-        secondaryColor: 'oklch(72.0% 0.155 145.0 / 1)',
-      },
+      
     ],
   },
   {
