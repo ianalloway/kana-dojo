@@ -1099,6 +1099,11 @@ const baseThemeSets: BaseThemeGroup[] = [
         secondaryColor: 'oklch(68.0% 0.205 30.0 / 1)',
       },
       {
+        id: 'sunset-train',
+        backgroundColor: 'oklch(22.0% 0.052 45.0 / 1)',
+        mainColor: 'oklch(88.0% 0.165 65.0 / 1)',
+        secondaryColor: 'oklch(72.0% 0.185 35.0 / 1)',
+      },{
         id: 'castle-gate',
         backgroundColor: 'oklch(23.0% 0.018 75.0 / 1)',
         mainColor: 'oklch(70.0% 0.055 80.0 / 1)',
