@@ -639,7 +639,7 @@
     "issued": true,
     "completed": true,
     "completedBy": "ianalloway",
-    "completedPR": 4911
+    "completedPR": 4916
   },
   {
     "id": "tanuki-mischief",
@@ -658,7 +658,7 @@
     "backgroundColor": "oklch(93.0% 0.032 150.0 / 1)",
     "mainColor": "oklch(62.0% 0.175 155.0 / 1)",
     "secondaryColor": "oklch(85.0% 0.095 95.0 / 1)",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -668,7 +668,7 @@
     "backgroundColor": "oklch(23.0% 0.018 75.0 / 1)",
     "mainColor": "oklch(70.0% 0.055 80.0 / 1)",
     "secondaryColor": "oklch(60.0% 0.145 25.0 / 1)",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -678,8 +678,10 @@
     "backgroundColor": "oklch(16.0% 0.055 270.0 / 1)",
     "mainColor": "oklch(72.0% 0.195 220.0 / 1)",
     "secondaryColor": "oklch(68.0% 0.205 30.0 / 1)",
-    "issued": false,
-    "completed": false
+    "issued": true,
+    "completed": true,
+    "completedBy": "imandisp",
+    "completedPR": 4931
   },
   {
     "id": "bamboo-forest",
@@ -688,8 +690,10 @@
     "backgroundColor": "oklch(21.0% 0.045 155.0 / 1)",
     "mainColor": "oklch(70.0% 0.145 150.0 / 1)",
     "secondaryColor": "oklch(78.0% 0.095 140.0 / 1)",
-    "issued": false,
-    "completed": false
+    "issued": true,
+    "completed": true,
+    "completedBy": "negativ14",
+    "completedPR": 4929
   },
   {
     "id": "sunset-train",
@@ -698,7 +702,7 @@
     "backgroundColor": "oklch(22.0% 0.052 45.0 / 1)",
     "mainColor": "oklch(88.0% 0.165 65.0 / 1)",
     "secondaryColor": "oklch(72.0% 0.185 35.0 / 1)",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
@@ -708,7 +712,7 @@
     "backgroundColor": "oklch(19.0% 0.058 290.0 / 1)",
     "mainColor": "oklch(70.0% 0.165 295.0 / 1)",
     "secondaryColor": "oklch(80.0% 0.125 285.0 / 1)",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {

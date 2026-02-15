@@ -8,7 +8,7 @@
 
 ![Training](https://github.com/user-attachments/assets/d491708f-2ad3-41c7-9717-dec8a90afd03)
 
-**An aesthetic, minimalist and highly customizable platform for mastering Japanese inspired by Monkeytype**
+**An aesthetic, minimalist and highly customizable platform for mastering Japanese inspired by Duolingo and Monkeytype. Sponsored by Vercel**
 
 [![Live Demo](https://img.shields.io/badge/demo-kanadojo.com-blue?style=for-the-badge)](https://kanadojo.com)
 [![DeepWiki](https://img.shields.io/badge/docs-DeepWiki-purple?style=for-the-badge)](https://deepwiki.com/lingdojo/kana-dojo)
@@ -20,9 +20,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 [![Vitest](https://img.shields.io/badge/Tests-Vitest-yellow?style=for-the-badge)](https://vitest.dev/)
 [![AGPL-3.0](https://img.shields.io/badge/open-source-green?style=for-the-badge)](https://www.gnu.org/licenses/agpl-3.0)
-[![Stars](https://img.shields.io/github/stars/lingdojo/kana-dojo?style=for-the-badge&logo=github)](https://github.com/lingdojo/kana-dojo/stargazers)
-[![Forks](https://img.shields.io/github/forks/lingdojo/kana-dojo?style=for-the-badge&logo=github)](https://github.com/lingdojo/kana-dojo/network/members)
-[![Contributors](https://img.shields.io/github/contributors/lingdojo/kana-dojo?style=for-the-badge&logo=github)](https://github.com/lingdojo/kana-dojo/graphs/contributors)
+[![Sponsored by Vercel](https://img.shields.io/badge/Sponsored%20by-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/CyvBNNrSmb)
 [![Email](https://img.shields.io/badge/Email-dev%40kanadojo.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dev@kanadojo.com)
 

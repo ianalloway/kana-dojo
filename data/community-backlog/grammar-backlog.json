@@ -464,49 +464,49 @@
   {
     "id": 78,
     "text": "\"〜ながら\" can mean \"while\" (simultaneous action).",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
     "id": 79,
     "text": "\"〜にすぎない\" means \"no more than...\".",
-    "completed": false,
+    "completed": true,
     "issued": false
   },
   {
     "id": 80,
     "text": "\"〜てはじめて\" means \"only after...\".",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
     "id": 81,
     "text": "\"〜に気づく\" means \"to notice / realize...\".",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
     "id": 82,
     "text": "\"〜ばかりか\" means \"not only... but also\".",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
     "id": 83,
     "text": "\"〜にしたがって\" means \"as / in accordance with...\".",
-    "completed": false,
+    "completed": true,
     "issued": false
   },
   {
     "id": 84,
     "text": "\"〜を通して\" means \"through / throughout...\".",
-    "completed": false,
+    "completed": true,
     "issued": false
   },
   {
     "id": 85,
     "text": "\"〜に限って\" means \"only / exclusively\".",
     "issued": false,
-    "completed": false
+    "completed": true
   }
 ]
