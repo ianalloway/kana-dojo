@@ -342,11 +342,13 @@
     "secondaryColor": "oklch(85.0% 0.095 95.0 / 1)"
   },
   {
-    "id": "pixel-retro",
-    "backgroundColor": "oklch(14.0% 0.025 280.0 / 1)",
-    "mainColor": "oklch(72.0% 0.200 145.0 / 1)",
-    "secondaryColor": "oklch(80.0% 0.185 55.0 / 1)"
-    "id": "midnight-ramen",
+        "id": "pixel-retro",
+        "backgroundColor": "oklch(14.0% 0.025 280.0 / 1)",
+        "mainColor": "oklch(72.0% 0.200 145.0 / 1)",
+        "secondaryColor": "oklch(80.0% 0.185 55.0 / 1)"
+      },
+      {
+        "id": "midnight-ramen",
     "backgroundColor": "oklch(15.0% 0.035 25.0 / 1)",
     "mainColor": "oklch(85.0% 0.145 55.0 / 1)",
     "secondaryColor": "oklch(65.0% 0.175 15.0 / 1)"
@@ -392,5 +394,29 @@
     "backgroundColor": "oklch(20.0% 0.055 140.0 / 1)",
     "mainColor": "oklch(75.0% 0.175 135.0 / 1)",
     "secondaryColor": "oklch(90.0% 0.085 100.0 / 1)"
+  },
+  {
+    "id": "hanami-pink",
+    "backgroundColor": "oklch(95.0% 0.025 350.0 / 1)",
+    "mainColor": "oklch(75.0% 0.165 350.0 / 1)",
+    "secondaryColor": "oklch(55.0% 0.125 145.0 / 1)"
+  },
+  {
+    "id": "bamboo-forest",
+    "backgroundColor": "oklch(18.0% 0.045 135.0 / 1)",
+    "mainColor": "oklch(70.0% 0.155 140.0 / 1)",
+    "secondaryColor": "oklch(85.0% 0.075 95.0 / 1)"
+  },
+  {
+    "id": "ukiyo-wave",
+    "backgroundColor": "oklch(20.0% 0.055 230.0 / 1)",
+    "mainColor": "oklch(80.0% 0.145 220.0 / 1)",
+    "secondaryColor": "oklch(95.0% 0.045 85.0 / 1)"
+  },
+  {
+    "id": "taiko-drum",
+    "backgroundColor": "oklch(12.0% 0.025 25.0 / 1)",
+    "mainColor": "oklch(60.0% 0.175 25.0 / 1)",
+    "secondaryColor": "oklch(85.0% 0.055 55.0 / 1)"
   }
 ]
