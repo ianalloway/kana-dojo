@@ -346,5 +346,51 @@
     "backgroundColor": "oklch(14.0% 0.025 280.0 / 1)",
     "mainColor": "oklch(72.0% 0.200 145.0 / 1)",
     "secondaryColor": "oklch(80.0% 0.185 55.0 / 1)"
+    "id": "midnight-ramen",
+    "backgroundColor": "oklch(15.0% 0.035 25.0 / 1)",
+    "mainColor": "oklch(85.0% 0.145 55.0 / 1)",
+    "secondaryColor": "oklch(65.0% 0.175 15.0 / 1)"
+  },
+  {
+    "id": "koi-pond",
+    "backgroundColor": "oklch(22.0% 0.045 220.0 / 1)",
+    "mainColor": "oklch(75.0% 0.185 25.0 / 1)",
+    "secondaryColor": "oklch(80.0% 0.125 85.0 / 1)"
+  },
+  {
+    "id": "matcha-latte",
+    "backgroundColor": "oklch(92.0% 0.025 95.0 / 1)",
+    "mainColor": "oklch(55.0% 0.145 145.0 / 1)",
+    "secondaryColor": "oklch(45.0% 0.085 130.0 / 1)"
+  },
+  {
+    "id": "neon-arcade",
+    "backgroundColor": "oklch(12.0% 0.045 280.0 / 1)",
+    "mainColor": "oklch(78.0% 0.225 320.0 / 1)",
+    "secondaryColor": "oklch(72.0% 0.195 180.0 / 1)"
+  },
+  {
+    "id": "torii-gate",
+    "backgroundColor": "oklch(18.0% 0.055 15.0 / 1)",
+    "mainColor": "oklch(65.0% 0.195 25.0 / 1)",
+    "secondaryColor": "oklch(85.0% 0.065 85.0 / 1)"
+  },
+  {
+    "id": "zen-garden",
+    "backgroundColor": "oklch(88.0% 0.015 90.0 / 1)",
+    "mainColor": "oklch(45.0% 0.075 145.0 / 1)",
+    "secondaryColor": "oklch(35.0% 0.045 200.0 / 1)"
+  },
+  {
+    "id": "shibuya-night",
+    "backgroundColor": "oklch(10.0% 0.035 270.0 / 1)",
+    "mainColor": "oklch(75.0% 0.210 350.0 / 1)",
+    "secondaryColor": "oklch(70.0% 0.180 200.0 / 1)"
+  },
+  {
+    "id": "wasabi-fresh",
+    "backgroundColor": "oklch(20.0% 0.055 140.0 / 1)",
+    "mainColor": "oklch(75.0% 0.175 135.0 / 1)",
+    "secondaryColor": "oklch(90.0% 0.085 100.0 / 1)"
   }
 ]
