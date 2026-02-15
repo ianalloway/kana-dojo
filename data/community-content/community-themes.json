@@ -466,5 +466,27 @@
     "backgroundColor": "oklch(95.0% 0.025 340.0 / 1)",
     "mainColor": "oklch(70.0% 0.145 340.0 / 1)",
     "secondaryColor": "oklch(80.0% 0.085 145.0 / 1)"
+    "id": "fuji-snow",
+    "backgroundColor": "oklch(98.0% 0.008 220.0 / 1)",
+    "mainColor": "oklch(50.0% 0.145 220.0 / 1)",
+    "secondaryColor": "oklch(75.0% 0.095 180.0 / 1)"
+  },
+  {
+    "id": "samurai-steel",
+    "backgroundColor": "oklch(20.0% 0.015 240.0 / 1)",
+    "mainColor": "oklch(65.0% 0.035 240.0 / 1)",
+    "secondaryColor": "oklch(55.0% 0.125 25.0 / 1)"
+  },
+  {
+    "id": "tanuki-forest",
+    "backgroundColor": "oklch(22.0% 0.045 145.0 / 1)",
+    "mainColor": "oklch(70.0% 0.155 145.0 / 1)",
+    "secondaryColor": "oklch(65.0% 0.125 45.0 / 1)"
+  },
+  {
+    "id": "daruma-luck",
+    "backgroundColor": "oklch(95.0% 0.015 60.0 / 1)",
+    "mainColor": "oklch(55.0% 0.195 25.0 / 1)",
+    "secondaryColor": "oklch(75.0% 0.145 60.0 / 1)"
   }
 ]
