@@ -418,5 +418,29 @@
     "backgroundColor": "oklch(12.0% 0.025 25.0 / 1)",
     "mainColor": "oklch(60.0% 0.175 25.0 / 1)",
     "secondaryColor": "oklch(85.0% 0.055 55.0 / 1)"
+  },
+  {
+    "id": "onsen-steam",
+    "backgroundColor": "oklch(94.0% 0.015 210.0 / 1)",
+    "mainColor": "oklch(55.0% 0.095 200.0 / 1)",
+    "secondaryColor": "oklch(70.0% 0.065 180.0 / 1)"
+  },
+  {
+    "id": "kabuki-drama",
+    "backgroundColor": "oklch(14.0% 0.045 15.0 / 1)",
+    "mainColor": "oklch(85.0% 0.195 25.0 / 1)",
+    "secondaryColor": "oklch(90.0% 0.045 85.0 / 1)"
+  },
+  {
+    "id": "sushi-fresh",
+    "backgroundColor": "oklch(96.0% 0.012 90.0 / 1)",
+    "mainColor": "oklch(55.0% 0.175 25.0 / 1)",
+    "secondaryColor": "oklch(65.0% 0.145 145.0 / 1)"
+  },
+  {
+    "id": "ninja-shadow",
+    "backgroundColor": "oklch(10.0% 0.015 270.0 / 1)",
+    "mainColor": "oklch(45.0% 0.025 260.0 / 1)",
+    "secondaryColor": "oklch(70.0% 0.165 15.0 / 1)"
   }
 ]
